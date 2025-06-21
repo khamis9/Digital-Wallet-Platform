@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Profile
+        </title>
+        <script src="profile.js"></script>
+    </head>
+
+    <body>
+        <h3>User Profile</h3>
+        <form action="./../backend/updateProfile.php" method="post">
+            Name:
+            <input type="text" name="name" value="" required>
+            <br><br>
+
+            Email:
+            <input type="email" name="email" value="" required>
+            <br><br>
+
+            Address:
+            <input type="text" name="address" value="" required>
+            <br><br>
+
+            Phone:
+            <input type="tel" name="phone" value="" required>
+            <br><br>
+
+            <button type="submit">Update</button>
+        </form>
+    </body>
+</html>
