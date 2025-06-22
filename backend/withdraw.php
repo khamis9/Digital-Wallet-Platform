@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
         if($amount == "" || !is_numeric($amount) || $amount <= 0){
             echo "Invalid amount";
         }else{
-            $sql = "INSERT INTO transactions (user_id, type, amount, created_at) VALUES ($user_id, 'withdraw', $amount, NOW())";
+            $sql = "INSERT INTO transactions (user_id, type, amount, transaction_date) VALUES ($user_id, 'withdraw', $amount, NOW())";
 
             if(mysqli_query($conn, $sql)){
                 echo "withdraw successful";

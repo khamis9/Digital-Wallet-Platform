@@ -18,9 +18,9 @@ if (isset($_SESSION["id"])) {
             "phone" => $row["phone"]
         ]);
     } else {
-        echo json_encode(["user not found"]);
+        echo json_encode(["error" => "user not found"]);
     }
 } else {
-    echo json_encode(["not logged in"]);
+    echo json_encode(["error" => "not logged in"]);
 }
 ?>
