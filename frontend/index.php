@@ -18,6 +18,7 @@ session_start();
                 <li><a href="deposit.html">Deposit Funds</a></li>
                 <li><a href="withdraw.html">Withdraw Funds</a></li>
                 <li><a href="history.html">Transaction History</a></li>
+                <li><a href="./../backend/logout.php">Log Out</a></li>
             </ul>
         <?php else: ?>
             <p>You are not logged in.</p>
