@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            transaction history
+        </title>
+    </head>
+    
+    <body>
+        <h3>transaction history:</h3>
+
+        <form method="get" action="./../backend/history.php">
+            type:
+            <select name="type">
+                <option value="">everything</option>
+                <option value="deposit">deposit</option>
+                <option value="withdraw">withdraw</option>
+            </select>
+            <br><br>
+
+            from:
+            <input type="date" name="from">
+            <br><br>
+
+            to:
+            <input type="date" name="to">
+            <br><br>
+
+            <button type="submit">view</button>
+        </form>
+    </body>
+</html>
