@@ -1,6 +1,6 @@
 window.onload = () => {
     fetch("./../backend/profile.php")
-        .then(response => response.json)
+        .then(response => response.json())
         .then(data => {
             if(data.error){
                 alert(data.error);

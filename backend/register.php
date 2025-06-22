@@ -1,12 +1,13 @@
 <?php
+session_start();
 require "database.php";
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     $name = $_POST["name"];
     $email = $_POST["email"];
-    $password = $_POST['password'];
-    $address = $_POST['address'];
-    $phone = $_POST['phone'];
+    $password = $_POST["password"];
+    $address = $_POST["address"];
+    $phone = $_POST["phone"];
     
     if($name == "" || $email == "" || $password == "" || $address == "" || $phone == ""){
         echo "please fill in all the fields";

@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "database.php";
 
 header("Content-Type: application/json");
