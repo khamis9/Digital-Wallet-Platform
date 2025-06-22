@@ -13,7 +13,8 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
             $sql = "INSERT INTO transactions (user_id, type, amount, transaction_date) VALUES ($user_id, 'deposit', $amount, NOW())";
 
             if(mysqli_query($conn, $sql)){
-                echo "deposit successful";
+                header("Location: ./../frontend/index.php");
+                exit();
             }else{
                 echo "error";
             }

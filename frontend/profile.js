@@ -10,7 +10,6 @@ window.onload = () => {
                 document.querySelector("input[name='address']").value = data.address;
                 document.querySelector("input[name='phone']").value = data.phone;
             }
-        }
-    )
+        })
         .catch(err => alert("failed to load profile"))
 };
